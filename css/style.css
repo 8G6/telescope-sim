@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+#space{
+    background-image: url('../pics/space.jpg');
+    background-color: rgb(13, 13, 13);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: -1;
+    overflow:hidden;
+    top: 0;
+   opacity: 0.9;   
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter:brightness(100%);
+    border-radius: 90%;
+    border: 1px white;
+    z-index: -1;
+}
+#obj{
+    z-index: 1;
+}
+table{
+    z-index: 9999;
+}

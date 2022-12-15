@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryu Sim</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="size(45)">
+    <table>
+        <tr>
+            <td>Opacity</td>
+            <td>:</td>
+            <td><input onchange="opacity(this.value)" type="range" id="opc" min="0" max="100" value="50"></td>
+        </tr>
+        <tr>
+            <td>Enter focal length of Mirror</td>
+            <td>:</td>
+            <td><input type="number" id="FLM"></td>
+            <td>
+                <select name="unit-flm" id="unit-flm">
+                    <option value="1">mm</option>
+                    <option value="10">cm</option>
+                    <option value="25.4">inch</option>
+                    <option value="304.8">feet</option>
+                    <option value="1000">m</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Apprature of Mirror</td>
+            <td>:</td>
+            <td><input type="number" id="APR"></td>
+            <td>
+                <select name="unit-apr" id="unit-apr">
+                    <option value="1">mm</option>
+                    <option value="10">cm</option>
+                    <option value="25.4">inch</option>
+                    <option value="304.8">feet</option>
+                    <option value="1000">m</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter focal length of eyepeice</td>
+            <td>:</td>
+            <td><input type="number" id="FLE"></td>
+            <td>
+                <select name="unit-fle" id="unit-fle">
+                    <option value="1">mm</option>
+                    <option value="10">cm</option>
+                    <option value="25.4">inch</option>
+                    <option value="304.8">feet</option>
+                    <option value="1000">m</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="planets">Choose a planet:</label></td>
+            <td>:</td>
+            <td>
+                <select name="planets" id="planets">
+                    <option value="jup">Jupiter</option>
+                    <option value="mars">Mars</option>
+                    <option value="sat">Saturn</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="barlow">Choose a barlow:</label></td>
+            <td>:</td>
+            <td>
+                <select name="barlow" id="barlow">
+                    <option value="1">None</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                    <option value="2.5">2.5x</option>
+                    <option value="3">3x</option>
+                    <option value="3.5">3.5x</option>
+                    <option value="4">4x</option>
+                    <option value="4.5">4.5x</option>
+                    <option value="5">5x</option>
+                </select>
+            </td>
+        </tr>
+        <tr rowspan="2">
+            <td><button onclick="run()">click</button></td>
+        </tr>
+    </table>
+      
+   
+    
+
+    <div id="space">
+        
+    </div>
+    <img class="center" src="./pics/planets/jup.png" alt="obj" id="obj">
+    <script src="./js/script.js"></script>
+</body>
+</html>
